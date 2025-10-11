@@ -1,0 +1,8 @@
+{"id": "divisibility", "ok": false, "pred": "<yes/no> to determine if 384 is divisible by 3, 6, and 12, i'll check each divisor one by one", "gold": "yes", "secs": 9.698}
+{"id": "sum-digits", "ok": false, "pred": "<number> please reason step by step, and use latex to format your answer", "gold": "30", "secs": 9.284}
+{"id": "parity", "ok": false, "pred": "<even/odd>", "gold": "odd", "secs": 9.274}
+{"id": "coins-boxes", "ok": false, "pred": "<box>", "gold": "gs", "secs": 9.28}
+{"id": "algebra", "ok": false, "pred": "<number> to solve for x, i'll start by subtracting 2x from both sides to get all the x terms on one side that leaves me with -x - 7 = 5 then, i'll add 7 to both sides to isolate the term with x, resulting in -x = 12 finally, i'll multiply both sides by -1 to solve for x, which gives me x = -12 so, the final answer is: \\boxed{-12}", "gold": "12", "secs": 9.279}
+{"id": "prob", "ok": false, "pred": "<a/b>", "gold": "3/8", "secs": 9.284}
+{"id": "date", "ok": false, "pred": "<weekday> to solve this problem, i need to determine the day of the week 100 days from a given starting day let's assume the starting day is a specific weekday, say monday", "gold": "thursday", "secs": 9.299}
+{"id": "logic", "ok": false, "pred": "<yes/no> to solve this problem, i need to analyze the given statements and determine if the conclusion logically follows", "gold": "no", "secs": 9.314}

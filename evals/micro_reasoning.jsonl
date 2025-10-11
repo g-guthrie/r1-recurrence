@@ -1,0 +1,8 @@
+{"id":"divisibility","prompt":"Is 738 divisible by 6? Show work. End with: Final answer: <yes/no>.","target":"yes"}
+{"id":"sum-digits","prompt":"Compute the sum of digits of 827364. End with: Final answer: <number>.","target":"30"}
+{"id":"parity","prompt":"If n is even and m is odd, is n+m even or odd? Explain briefly. End with: Final answer: <even/odd>.","target":"odd"}
+{"id":"coins-boxes","prompt":"You have 3 boxes: (GG),(SS),(GS). All labels are wrong. You may draw one coin from one box. Which box do you draw from to deduce all labels? End with: Final answer: <box>.","target":"GS"}
+{"id":"algebra","prompt":"Solve for x: 3x - 7 = 2x + 5. End with: Final answer: <number>.","target":"12"}
+{"id":"prob","prompt":"A fair coin is flipped 3 times. Probability of exactly two heads? Answer as a reduced fraction. End with: Final answer: <a/b>.","target":"3/8"}
+{"id":"date","prompt":"Today is Monday. In 10 days, what day will it be? End with: Final answer: <weekday>.","target":"Thursday"}
+{"id":"logic","prompt":"All bloops are snargs. Some snargs are flinks. Does it follow that some bloops are flinks? Answer yes/no and justify briefly. End with: Final answer: <yes/no>.","target":"no"}

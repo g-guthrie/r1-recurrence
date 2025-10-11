@@ -1,0 +1,8 @@
+{"id": "divisibility", "ok": false, "pred": "**divis", "gold": "yes", "secs": 245.29}
+{"id": "sum-digits", "ok": false, "pred": "\\]", "gold": "30", "secs": 220.189}
+{"id": "parity", "ok": false, "pred": "=", "gold": "odd", "secs": 245.148}
+{"id": "coins-boxes", "ok": false, "pred": "coin", "gold": "gs", "secs": 245.348}
+{"id": "algebra", "ok": true, "pred": "12", "gold": "12", "secs": 229.187}
+{"id": "prob", "ok": false, "pred": "hht", "gold": "3/8", "secs": 245.439}
+{"id": "date", "ok": false, "pred": "10", "gold": "thursday", "secs": 244.988}
+{"id": "logic", "ok": false, "pred": "wait", "gold": "no", "secs": 245.318}

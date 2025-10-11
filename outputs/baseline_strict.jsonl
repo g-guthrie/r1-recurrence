@@ -1,0 +1,8 @@
+{"id": "divisibility", "ok": false, "pred": "2", "gold": "yes", "secs": 1.689}
+{"id": "sum-digits", "ok": false, "pred": "827364", "gold": "30", "secs": 1.219}
+{"id": "parity", "ok": false, "pred": "even", "gold": "odd", "secs": 1.213}
+{"id": "coins-boxes", "ok": false, "pred": "gg", "gold": "gs", "secs": 1.214}
+{"id": "algebra", "ok": false, "pred": "5", "gold": "12", "secs": 1.207}
+{"id": "prob", "ok": false, "pred": "okay, so i need to find the probability of getting exactly two heads when flipping a fair coin three times. hmm, let's break this down. first, i know that each coin flip has two", "gold": "3/8", "secs": 1.207}
+{"id": "date", "ok": false, "pred": "monday", "gold": "thursday", "secs": 1.207}
+{"id": "logic", "ok": false, "pred": "okay, so i'm trying to figure out this logic problem. the question is: all bloops are snargs. some snargs are flinks. does it follow that some bloops are fl", "gold": "no", "secs": 1.207}
