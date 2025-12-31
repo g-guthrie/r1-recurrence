@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Med Deck Forge — MVP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <p class="eyebrow">Med Deck Forge</p>
+        <h1>MVP: one prompt → live deck → Anki-style review</h1>
+      </div>
+    </div>
+    <p class="lede">Type a command like “40 cards for EM ITE high yield”, click Generate, watch cards assemble, then review with space/1/2/3/4.</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <div class="command-bar">
+        <input id="promptInput" type="text" placeholder="e.g., 40 cards for EM ITE high yield" aria-label="Deck prompt" />
+        <button id="generateBtn" class="btn btn-primary">Generate</button>
+      </div>
+      <div class="chip-row" id="metaChips"></div>
+    </section>
+
+    <section class="panel grid">
+      <div class="build">
+        <div class="build__header">
+          <div>
+            <p class="eyebrow">Deck assembly</p>
+            <h2 id="buildStatus">Idle</h2>
+            <p class="hint">Smooth counter, streaming placeholders that resolve into cards.</p>
+          </div>
+          <div class="counter">
+            <span id="builtCount">0</span>
+            <span class="muted">/</span>
+            <span id="targetCount">0</span>
+          </div>
+        </div>
+        <div id="progressBar" class="progress"><span></span></div>
+        <div id="buildList" class="build-list"></div>
+      </div>
+
+      <div class="reviewer">
+        <p class="eyebrow">Reviewer</p>
+        <h2>Anki-style controls</h2>
+        <p class="hint">Space: flip · 1 2 3 4: Again / Hard / Good / Easy · Enter: next</p>
+        <div class="review-card" id="reviewCard">
+          <div class="side" id="cardFront"></div>
+          <div class="side back" id="cardBack"></div>
+          <div class="side overlay" id="cardOverlay">Flip with space</div>
+        </div>
+        <div class="review-controls">
+          <button class="btn pill again" data-grade="again">1 · Again</button>
+          <button class="btn pill hard" data-grade="hard">2 · Hard</button>
+          <button class="btn pill good" data-grade="good">3 · Good</button>
+          <button class="btn pill easy" data-grade="easy">4 · Easy</button>
+        </div>
+        <p class="muted" id="reviewMeta">No deck yet.</p>
+      </div>
+    </section>
+
+    <section class="panel edit">
+      <div>
+        <p class="eyebrow">Magic edit (optional)</p>
+        <h3>Apply one edit prompt to all cards</h3>
+        <p class="hint">Example: “make answers longer”</p>
+      </div>
+      <div class="edit-bar">
+        <input id="editInput" type="text" placeholder="Describe the edit…" aria-label="Edit prompt" />
+        <button id="editBtn" class="btn btn-secondary">Apply edit</button>
+      </div>
+      <p class="muted">This simulates a backend edit endpoint; in production, the model would transform each card.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Structured-output friendly. Streaming animation is simulated here; wire to /api/decks/generate and /api/decks/:id/edit for real data.</p>
+    <p class="muted">Medical content is placeholder—verify against authoritative sources.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

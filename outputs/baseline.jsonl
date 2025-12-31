@@ -1,8 +1,0 @@
-{"id": "divisibility", "ok": false, "pred": "+", "gold": "yes", "secs": 9.545}
-{"id": "sum-digits", "ok": false, "pred": "4", "gold": "30", "secs": 9.049}
-{"id": "parity", "ok": false, "pred": "2", "gold": "odd", "secs": 9.022}
-{"id": "coins-boxes", "ok": false, "pred": "therefore", "gold": "gs", "secs": 9.025}
-{"id": "algebra", "ok": true, "pred": "12", "gold": "12", "secs": 9.022}
-{"id": "prob", "ok": false, "pred": "\". alright let me think about how to approach this", "gold": "3/8", "secs": 9.026}
-{"id": "date", "ok": false, "pred": "**", "gold": "thursday", "secs": 8.964}
-{"id": "logic", "ok": false, "pred": "premises", "gold": "no", "secs": 9.03}
